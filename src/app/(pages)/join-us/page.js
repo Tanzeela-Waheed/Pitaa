@@ -1,10 +1,10 @@
 import React from 'react'
-import Home from './(pages)/home/Home'
+import JoinUs from './JoinUs'
 
 const page = () => {
   return (
     <div>
-<Home/>
+      <JoinUs/>
     </div>
   )
 }

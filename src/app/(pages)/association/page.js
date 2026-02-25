@@ -1,10 +1,10 @@
 import React from 'react'
-import Home from './(pages)/home/Home'
+import Association from './Association'
 
 const page = () => {
   return (
     <div>
-<Home/>
+      <Association/>
     </div>
   )
 }
