@@ -8,26 +8,48 @@ const Association = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 600,        // Smooth animation
-      once: true,           // Sirf ek baar
-      offset: 30,           // Thora pehle start
+      duration: 200,        // Even smoother animation
+      once: true,           
+      offset: 20,           // Reduced offset
       easing: 'ease-out',
     });
   }, []);
 
   return (
-    <div className="min-h-screen bg-white relative py-12 px-6 sm:px-10">
+    <div className="min-h-screen bg-white relative py-12 px-6 sm:px-10 overflow-hidden">
       
       {/* Light Gradient Background - Bohat light aur elegant */}
       <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-blue-50/30 to-transparent"></div>
       
+    {/* Right Side - Elegant Slate Gray (Responsive) */}
+<div className="absolute -top-20 -right-20 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+  {/* Main circle - responsive */}
+  <div className="absolute top-5 right-5 md:top-8 md:right-8 lg:top-10 lg:right-10 w-48 h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 border-2 border-slate-400/30 rounded-full"></div>
+  
+  {/* Inner circles */}
+  <div className="absolute top-12 right-12 md:top-15 md:right-15 lg:top-20 lg:right-20 w-32 h-32 md:w-42 md:h-42 lg:w-52 lg:h-52 border border-slate-500/25 rounded-full"></div>
+  <div className="absolute top-20 right-20 md:top-25 md:right-25 lg:top-32 lg:right-32 w-20 h-20 md:w-26 md:h-26 lg:w-32 lg:h-32 border-2 border-slate-400/20 border-dashed rounded-full"></div>
+  
+  {/* Dots - responsive */}
+  <div className="absolute top-16 right-16 md:top-20 md:right-20 lg:top-24 lg:right-24 w-1.5 h-1.5 md:w-2 md:h-2 lg:w-2 lg:h-2 bg-slate-500/50 rounded-full"></div>
+  <div className="absolute top-28 right-28 md:top-36 md:right-36 lg:top-44 lg:right-44 w-1.5 h-1.5 md:w-2 md:h-2 lg:w-2 lg:h-2 bg-slate-500/50 rounded-full"></div>
+  <div className="absolute top-40 right-40 md:top-52 md:right-52 lg:top-64 lg:right-64 w-1.5 h-1.5 md:w-2 md:h-2 lg:w-2 lg:h-2 bg-slate-500/50 rounded-full"></div>
+  
+  {/* Glow - responsive */}
+  <div className="absolute top-24 right-24 md:top-32 md:right-32 lg:top-40 lg:right-40 w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 bg-slate-400/10 rounded-full blur-lg md:blur-xl"></div>
+</div>
+
+      {/* Additional subtle element - Dark lines */}
+      <div className="absolute top-32 right-0 w-px h-24 bg-gradient-to-b from-blue-900/20 to-transparent"></div>
+      <div className="absolute top-40 right-10 w-px h-16 bg-gradient-to-b from-blue-900/20 to-transparent rotate-12"></div>
+
       {/* Main Container */}
       <div className="max-w-6xl mx-auto relative z-10">
         
-        {/* Elegant Heading */}
+        {/* Elegant Heading - Reduced animation */}
         <div 
           data-aos="fade-up"
-          data-aos-duration="700"
+          data-aos-duration="400"
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-light text-blue-800 tracking-wide pb-1 inline-block px-12">
@@ -43,11 +65,10 @@ const Association = () => {
         {/* Content - Baday font size ke saath */}
         <div className="space-y-12 text-gray-800 text-lg md:text-xl leading-relaxed">
           
-          {/* Classes of Membership */}
+          {/* Classes of Membership - Reduced animation */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="100"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Classes of Membership</h2>
             <p className="mb-4">The membership of <strong>PITAA</strong> shall be granted for a period of one year and shall expire on the 31st day of December every year, irrespective of the date of grant of membership.</p>
@@ -60,8 +81,7 @@ const Association = () => {
           {/* Application for Membership Enrollment */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="150"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Application for Membership Enrollment</h2>
             <p className="mb-3">• A sole proprietorship, academic, or institute is eligible for <strong>PITAA membership</strong>, provided it is engaged in IT academics or a relevant trade.</p>
@@ -74,8 +94,7 @@ const Association = () => {
           {/* Representation of a Member */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="200"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Representation of a Member</h2>
             <p className="mb-3">• Each member is entitled to appoint <strong>one representative</strong> to participate in meetings.</p>
@@ -86,8 +105,7 @@ const Association = () => {
           {/* Rights and Duties of Members */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="250"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Rights and Duties of Members</h2>
             <p className="font-medium text-gray-800 mb-3 text-xl">Rights:</p>
@@ -106,8 +124,7 @@ const Association = () => {
           {/* Disqualification of Members */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="300"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Disqualification of Members</h2>
             <p className="mb-3">A member's membership will cease if they:</p>
@@ -122,8 +139,7 @@ const Association = () => {
           {/* Membership Fees */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="350"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Membership Fees</h2>
             <p className="mb-3">The admission fee for all membership classes is <strong>Rs. _____</strong></p>
@@ -136,8 +152,7 @@ const Association = () => {
           {/* Funds of the Association */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="400"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Funds of the Association</h2>
             <p className="mb-3">The funds of PITAA shall comprise <strong>Admission Fees, Annual Subscriptions, gifts, donations, and other contributions</strong>. The Admission Fee and Annual Subscription shall be payable by the members of the Association as determined by the Executive Committee.</p>
@@ -147,8 +162,7 @@ const Association = () => {
           {/* Operation of Accounts */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="450"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Operation of Accounts</h2>
             <p className="mb-3">All the money of PITAA shall be deposited in an approved scheduled bank. The bank account of PITAA shall be operated jointly by any two office bearers authorized by the <strong>Executive Committee</strong>.</p>
@@ -158,8 +172,7 @@ const Association = () => {
           {/* Organizational Setup of PITAA */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="500"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Organizational Setup of PITAA</h2>
             <p className="mb-3">The Registered Office of PITAA shall be located in <strong>Lahore</strong>, with zonal offices in the following regions:</p>
@@ -171,8 +184,7 @@ const Association = () => {
           {/* Composition of the Executive Committee */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="550"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Composition of the Executive Committee</h2>
             <p className="mb-3">The Executive Committee of PITAA shall consist of the following:</p>
@@ -189,8 +201,7 @@ const Association = () => {
           {/* Appointment of the Election Commission */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="600"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Appointment of the Election Commission</h2>
             <p className="mb-3">Simultaneously with the approval of the election schedule, PITAA's Executive Committee shall appoint an <strong>Election Commission</strong> comprising three members who meet the following criteria:</p>
@@ -204,8 +215,7 @@ const Association = () => {
           {/* Functions of the Election Commission */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="650"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Functions of the Election Commission</h2>
             <p className="mb-3">The Election Commission shall oversee all election arrangements, including:</p>
@@ -219,8 +229,7 @@ const Association = () => {
           {/* Election Procedure */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="700"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Election Procedure</h2>
             <p className="mb-3">• Elections for Executive Committee members and office bearers shall be conducted by <strong>secret ballot</strong>. Postal ballots or proxies are not allowed.</p>
@@ -236,8 +245,7 @@ const Association = () => {
           {/* Conduct of Elections */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="750"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Conduct of Elections</h2>
             <p className="ml-6 mb-3">○ Ballot papers shall have numbered counterfoils, signed by the polling officer and Secretary-General.</p>
@@ -252,8 +260,7 @@ const Association = () => {
           {/* Term of Office */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="800"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Term of Office</h2>
             <p className="mb-3">The tenure of the Executive Committee members shall be <strong>____ year</strong>, with 50% of members retiring annually. Initial retirements will be determined by a draw. Office bearers shall serve for one year and will not be eligible for consecutive terms in any representative capacity.</p>
@@ -263,8 +270,7 @@ const Association = () => {
           {/* Filing of Returns */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="850"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Filing of Returns</h2>
             <p className="mb-3">PITAA's accounting year shall close on June 30 each year. Audited financial statements and a membership list as of September 30 shall be submitted to the Director, Trade Organizations, by December 31 annually.</p>
@@ -274,8 +280,7 @@ const Association = () => {
           {/* General Body of PITAA */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="900"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">General Body of PITAA</h2>
             <p className="mb-3">The General Body shall be PITAA's supreme governing authority, meeting twice annually. It shall:</p>
@@ -287,8 +292,7 @@ const Association = () => {
           {/* Executive Committee of PITAA */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="950"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Executive Committee of PITAA</h2>
             <p className="mb-3">The Executive Committee shall:</p>
@@ -304,8 +308,7 @@ const Association = () => {
           {/* Additional Provisions */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="1000"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Additional Provisions</h2>
             <p className="mb-3">PITAA elections shall adhere to the <strong>Trade Organization Rules 2013</strong>. In case of conflict between this document and the Trade Organization Ordinance 2007, the latter shall prevail.</p>
@@ -315,8 +318,7 @@ const Association = () => {
           {/* Chairman of the Association */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="1050"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Chairman of the Association</h2>
             <p className="mb-3">The Chairman of the Association shall be the head of the entire organization, including all branches and subordinate bodies. The Chairman shall be an ex-officio member of the Executive Committee and will perform all functions incidental to the office or assigned by the General Body or the Executive Committee. The first Chairman shall not be removable from office for a period of two years, regardless of any ordinary or special resolution. The Chairman and Vice Chairman must not be from the same class of members.</p>
@@ -326,8 +328,7 @@ const Association = () => {
           {/* Senior Vice Chairman of the Association */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="1100"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Senior Vice Chairman of the Association</h2>
             <p className="mb-3">The Senior Vice Chairman shall assist the Chairman in the performance of their duties and provide support in fulfilling their responsibilities.</p>
@@ -337,8 +338,7 @@ const Association = () => {
           {/* Vice Chairman of the Association */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="1150"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Vice Chairman of the Association</h2>
             <p className="mb-3">The Vice Chairman shall assist the Chairman in the performance of their duties and provide support in fulfilling their responsibilities.</p>
@@ -348,8 +348,7 @@ const Association = () => {
           {/* Paid President */}
           <section 
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="1200"
+            data-aos-duration="300"
           >
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Paid President</h2>
             <p className="mb-4">The Central Executive Committee may appoint a President of the Association on such terms and conditions, including remuneration, as deemed fit by the Committee. The President may be delegated specific functions by the Central Executive Committee as required from time to time. The President shall perform duties under the direction of the Chairman. The President will be responsible for implementing all policy and management decisions made by the Central Executive Committee and will supervise the overall functioning of the Association, including the Secretary-General.</p>

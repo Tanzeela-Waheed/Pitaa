@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Cpu, Sparkles } from "lucide-react"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Link from 'next/link';
 
 const images = [
   {
@@ -152,114 +153,124 @@ export default function Home() {
         <div className="absolute bottom-10 sm:bottom-20 right-10 sm:right-20 w-30 h-30 sm:w-40 sm:h-40 md:w-60 md:h-60 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
       </div>
 
-      {/* SECTION 1 */}
-      <section className="relative w-full bg-gradient-to-b from-white to-slate-50 py-12 sm:py-16 md:py-20 overflow-hidden">
-        
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50/50 to-blue-100"></div>
-        
-        <div className="absolute top-0 -left-20 w-48 sm:w-64 md:w-80 lg:w-96 h-48 sm:h-64 md:h-80 lg:h-96 bg-blue-200/30 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 -right-20 w-48 sm:w-64 md:w-80 lg:w-96 h-48 sm:h-64 md:h-80 lg:h-96 bg-indigo-200/30 rounded-full blur-3xl"></div>
-        
-        <div className="absolute inset-0 opacity-[0.02]" style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, #2563eb 1px, transparent 0)`,
-          backgroundSize: '48px 48px'
-        }}></div>
 
-        <div className="container mx-auto px-4 sm:px-5 md:px-6 grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center relative">
-          
-          <div 
-            data-aos="fade-right"
-            data-aos-duration="800"
-            className="relative flex order-2 lg:order-1 justify-center"
-          >
-            <div className="absolute -top-4 sm:-top-6 md:-top-8 -left-4 sm:-left-6 md:-left-8 w-16 sm:w-24 md:w-32 h-16 sm:h-24 md:h-32 bg-blue-900/20 rounded-full blur-3xl opacity-40"></div>
-            <Image
-              src="/images/section2.png"
-              alt="Section Image"
-              width={400}
-              height={400}
-              className="w-full max-w-[250px] xs:max-w-[280px] sm:max-w-[320px] md:max-w-[350px] lg:max-w-[400px] h-auto rounded-2xl border border-slate-200 transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:shadow-blue-900/20 shadow-none xs:shadow-sm sm:shadow-md md:shadow-lg lg:shadow-xl"
-              priority
-            />
-          </div>
 
-          <div 
-            data-aos="fade-left"
-            data-aos-duration="800"
-            className="flex flex-col justify-center space-y-4 sm:space-y-5 md:space-y-6 order-1 lg:order-2"
-          >
-            <div>
-              <p className="inline-flex items-center text-blue-800 font-semibold tracking-widest uppercase text-[10px] xs:text-xs sm:text-sm bg-blue-50 px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 rounded-full border border-blue-200">
-                Hey! We Are Pitaa
-              </p>
-              <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900 tracking-tight mt-3 sm:mt-4 md:mt-5">
-                Building Stronger <br className="hidden xs:block" />
-                Connections Between <br className="hidden xs:block" />
-                <span className="text-blue-800 relative inline-block">
-                  IT Academia & Industry
-                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-300 rounded-full"></span>
-                </span>
-              </h2>
-            </div>
+   {/* SECTION 1 */}
+<section className="relative w-full bg-gradient-to-b from-white to-slate-50 py-12 sm:py-16 md:py-20 overflow-hidden">
+  
+  <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50/50 to-blue-100"></div>
+  
+  <div className="absolute top-0 -left-20 w-48 sm:w-64 md:w-80 lg:w-96 h-48 sm:h-64 md:h-80 lg:h-96 bg-blue-200/30 rounded-full blur-3xl"></div>
+  <div className="absolute bottom-0 -right-20 w-48 sm:w-64 md:w-80 lg:w-96 h-48 sm:h-64 md:h-80 lg:h-96 bg-indigo-200/30 rounded-full blur-3xl"></div>
+  
+  <div className="absolute inset-0 opacity-[0.02]" style={{
+    backgroundImage: `radial-gradient(circle at 2px 2px, #2563eb 1px, transparent 0)`,
+    backgroundSize: '48px 48px'
+  }}></div>
 
-            <div 
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="100"
-              className="relative pl-10 sm:pl-12 md:pl-14 group"
-            >
-              <div className="absolute left-0 top-0.5 p-1.5 sm:p-2 md:p-2.5 bg-blue-100 rounded-lg shadow-sm group-hover:shadow-md group-hover:bg-blue-200 transition-all duration-300">
-                <Cpu className="text-blue-800 w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
-              </div>
-              <h4 className="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-1 sm:mb-1.5">
-                Our Mission
-              </h4>
-              <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed align-text-left">
-                PITAA serves as a unified voice for IT academia, addressing
-                institutional challenges, influencing policy frameworks, and
-                ensuring curriculum development remains aligned with evolving
-                industry standards.
-              </p>
-            </div>
-
-            <div 
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="200"
-              className="relative pl-10 sm:pl-12 md:pl-14 group"
-            >
-              <div className="absolute left-0 top-0.5 p-1.5 sm:p-2 md:p-2.5 bg-blue-100 rounded-lg shadow-sm group-hover:shadow-md group-hover:bg-blue-200 transition-all duration-300">
-                <Sparkles className="text-blue-800 w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
-              </div>
-              <h4 className="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-1 sm:mb-1.5">
-                Our Vision
-              </h4>
-              <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed">
-                Through collaboration with academic leaders and industry
-                professionals, PITAA aims to foster innovation, strengthen
-                partnerships, and build a globally competitive IT workforce.
-              </p>
-            </div>
-
-            <div 
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="300"
-            >
-              <Button
-                size="lg"
-                className="group mt-1 sm:mt-2 px-6 sm:px-7 md:px-8 lg:px-9 py-4 sm:py-5 md:py-6 text-xs sm:text-sm md:text-base font-semibold 
-                  rounded-full bg-blue-800 text-white shadow-xl shadow-blue-900/30
-                  hover:bg-blue-900 hover:shadow-2xl hover:-translate-y-1 hover:scale-105 
-                  transition-all duration-300 w-fit"
-              >
-                Discover More
-                <ArrowRight className="ml-1.5 sm:ml-2 w-4 sm:w-5 h-4 sm:h-5 transition-all duration-300 group-hover:translate-x-2" />
-              </Button>
-            </div>
-          </div>
+  <div className="container mx-auto px-4 sm:px-5 md:px-6 grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center relative">
+    
+    {/* IMAGE SECTION - SMALLER SIZE TO MATCH CONTENT */}
+    <div 
+      data-aos="fade-right"
+      data-aos-duration="800"
+      className="relative flex order-2 lg:order-1 justify-center items-center w-full"
+    >
+      {/* IMAGE CONTAINER - REDUCED SIZE */}
+      <div className="relative w-full flex justify-center items-center">
+        <div className="relative w-full max-w-[300px] xs:max-w-[350px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-[500px]">
+          <Image
+            src="/images/section.jpeg"
+            alt="Professional Section Image"
+            width={800}
+            height={800}
+            className="w-full h-auto rounded-2xl sm:rounded-3xl md:rounded-[40px] border-4 border-blue-800/30 transition-all duration-700 hover:scale-105"
+            priority
+          />
         </div>
-      </section>
+      </div>
+    </div>
+
+    {/* CONTENT SECTION - EXACTLY THE SAME */}
+    <div 
+      data-aos="fade-left"
+      data-aos-duration="800"
+      className="flex flex-col justify-center space-y-4 sm:space-y-5 md:space-y-6 order-1 lg:order-2"
+    >
+      <div>
+        <p className="inline-flex items-center text-blue-800 font-semibold tracking-widest uppercase text-[10px] xs:text-xs sm:text-sm bg-blue-50 px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 rounded-full border border-blue-200">
+          Hey! We Are Pitaa
+        </p>
+        <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900 tracking-tight mt-3 sm:mt-4 md:mt-5">
+          Building Stronger <br className="hidden xs:block" />
+          Connections Between <br className="hidden xs:block" />
+          <span className="text-blue-800 relative inline-block">
+            IT Academia & Industry
+            <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-300 rounded-full"></span>
+          </span>
+        </h2>
+      </div>
+
+      <div 
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="100"
+        className="relative pl-10 sm:pl-12 md:pl-14 group"
+      >
+        <div className="absolute left-0 top-0.5 p-1.5 sm:p-2 md:p-2.5 bg-blue-100 rounded-lg shadow-sm group-hover:shadow-md group-hover:bg-blue-200 transition-all duration-300">
+          <Cpu className="text-blue-800 w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
+        </div>
+        <h4 className="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-1 sm:mb-1.5">
+          Our Mission
+        </h4>
+        <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed align-text-left">
+          PITAA serves as a unified voice for IT academia, addressing
+          institutional challenges, influencing policy frameworks, and
+          ensuring curriculum development remains aligned with evolving
+          industry standards.
+        </p>
+      </div>
+
+      <div 
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="200"
+        className="relative pl-10 sm:pl-12 md:pl-14 group"
+      >
+        <div className="absolute left-0 top-0.5 p-1.5 sm:p-2 md:p-2.5 bg-blue-100 rounded-lg shadow-sm group-hover:shadow-md group-hover:bg-blue-200 transition-all duration-300">
+          <Sparkles className="text-blue-800 w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
+        </div>
+        <h4 className="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-1 sm:mb-1.5">
+          Our Vision
+        </h4>
+        <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed">
+          Through collaboration with academic leaders and industry
+          professionals, PITAA aims to foster innovation, strengthen
+          partnerships, and build a globally competitive IT workforce.
+        </p>
+      </div>
+
+      <div 
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="300"
+      >
+        <Link href='/contact-us'>
+        <Button
+          size="lg"
+          className="group mt-1 sm:mt-2 px-6 sm:px-7 md:px-8 lg:px-9 py-4 sm:py-5 md:py-6 text-xs sm:text-sm md:text-base font-semibold 
+            rounded-full bg-blue-800 text-white shadow-xl shadow-blue-900/30
+            hover:bg-blue-900 hover:shadow-2xl hover:-translate-y-1 hover:scale-105 
+            transition-all duration-300 w-fit"
+        >
+          Discover More
+          <ArrowRight className="ml-1.5 sm:ml-2 w-4 sm:w-5 h-4 sm:h-5 transition-all duration-300 group-hover:translate-x-2" />
+        </Button>
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* MEMBERS SECTION */}
       <div className="w-full py-5 md:py-10 overflow-hidden">
@@ -302,195 +313,213 @@ export default function Home() {
         </div>
       </div>
 
-      {/* FEATURES SECTION */}
-      <div className="w-full bg-gradient-to-b from-white to-slate-50 py-12 sm:py-16 md:py-20 overflow-hidden">
-        <div className="container mx-auto px-4 sm:px-5 md:px-6">
-          
-          <div 
-            data-aos="fade-up"
-            data-aos-duration="700"
-            className="relative w-full text-center mb-10 sm:mb-12 md:mb-16"
-          >
-            <div className="relative inline-block">
-              <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900 tracking-tight px-3 sm:px-4">
-                Pitaa Features
-              </h2>
-              <span className="absolute -bottom-2 sm:-bottom-3 left-1/2 -translate-x-1/2 w-[120%] h-0.5 bg-gradient-to-r from-transparent via-blue-600 to-transparent rounded-full"></span>
-            </div>
+    {/* FEATURES SECTION */}
+<div className="w-full bg-gradient-to-b from-white to-slate-50 py-12 sm:py-16 md:py-20 overflow-hidden">
+  <div className="container mx-auto px-4 sm:px-5 md:px-6">
+    
+    <div 
+      data-aos="fade-up"
+      data-aos-duration="700"
+      className="relative w-full text-center mb-10 sm:mb-12 md:mb-16"
+    >
+      <div className="relative inline-block">
+        <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900 tracking-tight px-3 sm:px-4">
+          Pitaa Features
+        </h2>
+        <span className="absolute -bottom-2 sm:-bottom-3 left-1/2 -translate-x-1/2 w-[120%] h-0.5 bg-gradient-to-r from-transparent via-blue-600 to-transparent rounded-full"></span>
+      </div>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
+      
+      {/* BOX 1 */}
+      <div 
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="0"
+        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-slate-100 hover:border-blue-200 hover:shadow-xl"
+        style={{ transition: 'transform 0.3s ease-out, box-shadow 0.5s ease-out, border-color 0.5s ease-out' }}
+        onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.03)'}
+        onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-100/40 via-blue-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-blue-600"></div>
+        <div className="relative p-5 sm:p-6 md:p-7 lg:p-8 z-10">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 group-hover:bg-blue-600 transition-all duration-500">
+            <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-blue-600 group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+            </svg>
           </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
-            
-            {/* BOX 1 */}
-            <div 
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="0"
-              className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg transition-all duration-500 overflow-hidden border border-slate-100 hover:border-blue-200 hover:scale-105 hover:shadow-2xl"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-100/40 via-blue-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-blue-600"></div>
-              <div className="relative p-5 sm:p-6 md:p-7 lg:p-8 z-10">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 group-hover:bg-blue-600 transition-all duration-300">
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-blue-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                  </svg>
-                </div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-blue-700 transition-colors">PITAA LINKUP</h3>
-                <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed mb-3 sm:mb-4">
-                  Connect with industry professionals and academic leaders through our exclusive networking platform.
-                </p>
-                <div className="flex items-center text-blue-600 font-medium text-xs sm:text-sm">
-                  <span>Learn more</span>
-                  <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* BOX 2 */}
-            <div 
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="50"
-              className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg transition-all duration-500 overflow-hidden border border-slate-100 hover:border-indigo-200 hover:scale-105 hover:shadow-2xl"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-100/40 via-indigo-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-400 to-blue-600"></div>
-              <div className="relative p-5 sm:p-6 md:p-7 lg:p-8 z-10">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-indigo-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 group-hover:bg-indigo-600 transition-all duration-300">
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-indigo-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-indigo-700 transition-colors">GATEWAY</h3>
-                <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed mb-3 sm:mb-4">
-                  Your entry point to IT academia resources, opportunities, and global collaborations.
-                </p>
-                <div className="flex items-center text-indigo-600 font-medium text-xs sm:text-sm">
-                  <span>Explore</span>
-                  <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* BOX 3 */}
-            <div 
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="100"
-              className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg transition-all duration-500 overflow-hidden border border-slate-100 hover:border-cyan-200 hover:scale-105 hover:shadow-2xl"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-100/40 via-cyan-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 to-blue-600"></div>
-              <div className="relative p-5 sm:p-6 md:p-7 lg:p-8 z-10">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-cyan-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 group-hover:bg-cyan-600 transition-all duration-300">
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-cyan-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-cyan-700 transition-colors">BRIDGE</h3>
-                <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed mb-3 sm:mb-4">
-                  Bridging the gap between academia and industry through innovative programs.
-                </p>
-                <div className="flex items-center text-cyan-600 font-medium text-xs sm:text-sm">
-                  <span>Connect</span>
-                  <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* BOX 4 */}
-            <div 
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="150"
-              className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg transition-all duration-500 overflow-hidden border border-slate-100 hover:border-purple-200 hover:scale-105 hover:shadow-2xl"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-100/40 via-purple-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-blue-600"></div>
-              <div className="relative p-5 sm:p-6 md:p-7 lg:p-8 z-10">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 group-hover:bg-purple-600 transition-all duration-300">
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-purple-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-purple-700 transition-colors">PERSPECTIVES</h3>
-                <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed mb-3 sm:mb-4">
-                  Fresh insights and thought leadership from IT academia and industry experts.
-                </p>
-                <div className="flex items-center text-purple-600 font-medium text-xs sm:text-sm">
-                  <span>Discover</span>
-                  <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* BOX 5 */}
-            <div 
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="200"
-              className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg transition-all duration-500 overflow-hidden border border-slate-100 hover:border-amber-200 hover:scale-105 hover:shadow-2xl"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-100/40 via-amber-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 to-blue-600"></div>
-              <div className="relative p-5 sm:p-6 md:p-7 lg:p-8 z-10">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 group-hover:bg-amber-600 transition-all duration-300">
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-amber-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-                  </svg>
-                </div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-amber-700 transition-colors">AWARDS</h3>
-                <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed mb-3 sm:mb-4">
-                  Recognizing excellence in IT academia and industry contributions.
-                </p>
-                <div className="flex items-center text-amber-600 font-medium text-xs sm:text-sm">
-                  <span>View winners</span>
-                  <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* BOX 6 */}
-            <div 
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="250"
-              className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg transition-all duration-500 overflow-hidden border border-slate-100 hover:border-emerald-200 hover:scale-105 hover:shadow-2xl"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-emerald-100/40 via-emerald-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-400 to-blue-600"></div>
-              <div className="relative p-5 sm:p-6 md:p-7 lg:p-8 z-10">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-emerald-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 group-hover:bg-emerald-600 transition-all duration-300">
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-emerald-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                  </svg>
-                </div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-emerald-700 transition-colors">CHRONICLES</h3>
-                <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed mb-3 sm:mb-4">
-                  Documenting the journey and milestones of PITAA's impact in IT academia.
-                </p>
-                <div className="flex items-center text-emerald-600 font-medium text-xs sm:text-sm">
-                  <span>Read stories</span>
-                  <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-blue-700 transition-colors duration-500">PITAA LINKUP</h3>
+          <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed mb-3 sm:mb-4">
+            Connect with industry professionals and academic leaders through our exclusive networking platform.
+          </p>
+          <div className="flex items-center text-blue-600 font-medium text-xs sm:text-sm">
+            <span>Learn more</span>
+            <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+            </svg>
           </div>
         </div>
       </div>
+
+      {/* BOX 2 */}
+      <div 
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="50"
+        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-slate-100 hover:border-indigo-200 hover:shadow-xl"
+        style={{ transition: 'transform 0.3s ease-out, box-shadow 0.5s ease-out, border-color 0.5s ease-out' }}
+        onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.03)'}
+        onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-100/40 via-indigo-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-400 to-blue-600"></div>
+        <div className="relative p-5 sm:p-6 md:p-7 lg:p-8 z-10">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-indigo-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 group-hover:bg-indigo-600 transition-all duration-500">
+            <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-indigo-600 group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+            </svg>
+          </div>
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-indigo-700 transition-colors duration-500">GATEWAY</h3>
+          <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed mb-3 sm:mb-4">
+            Your entry point to IT academia resources, opportunities, and global collaborations.
+          </p>
+          <div className="flex items-center text-indigo-600 font-medium text-xs sm:text-sm">
+            <span>Explore</span>
+            <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      {/* BOX 3 */}
+      <div 
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="100"
+        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-slate-100 hover:border-cyan-200 hover:shadow-xl"
+        style={{ transition: 'transform 0.3s ease-out, box-shadow 0.5s ease-out, border-color 0.5s ease-out' }}
+        onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.03)'}
+        onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-100/40 via-cyan-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 to-blue-600"></div>
+        <div className="relative p-5 sm:p-6 md:p-7 lg:p-8 z-10">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-cyan-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 group-hover:bg-cyan-600 transition-all duration-500">
+            <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-cyan-600 group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-cyan-700 transition-colors duration-500">BRIDGE</h3>
+          <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed mb-3 sm:mb-4">
+            Bridging the gap between academia and industry through innovative programs.
+          </p>
+          <div className="flex items-center text-cyan-600 font-medium text-xs sm:text-sm">
+            <span>Connect</span>
+            <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      {/* BOX 4 */}
+      <div 
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="150"
+        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-slate-100 hover:border-purple-200 hover:shadow-xl"
+        style={{ transition: 'transform 0.3s ease-out, box-shadow 0.5s ease-out, border-color 0.5s ease-out' }}
+        onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.03)'}
+        onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-100/40 via-purple-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-blue-600"></div>
+        <div className="relative p-5 sm:p-6 md:p-7 lg:p-8 z-10">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 group-hover:bg-purple-600 transition-all duration-500">
+            <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-purple-600 group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-purple-700 transition-colors duration-500">PERSPECTIVES</h3>
+          <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed mb-3 sm:mb-4">
+            Fresh insights and thought leadership from IT academia and industry experts.
+          </p>
+          <div className="flex items-center text-purple-600 font-medium text-xs sm:text-sm">
+            <span>Discover</span>
+            <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      {/* BOX 5 */}
+      <div 
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="200"
+        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-slate-100 hover:border-amber-200 hover:shadow-xl"
+        style={{ transition: 'transform 0.3s ease-out, box-shadow 0.5s ease-out, border-color 0.5s ease-out' }}
+        onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.03)'}
+        onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-100/40 via-amber-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 to-blue-600"></div>
+        <div className="relative p-5 sm:p-6 md:p-7 lg:p-8 z-10">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 group-hover:bg-amber-600 transition-all duration-500">
+            <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-amber-600 group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+            </svg>
+          </div>
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-amber-700 transition-colors duration-500">AWARDS</h3>
+          <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed mb-3 sm:mb-4">
+            Recognizing excellence in IT academia and industry contributions.
+          </p>
+          <div className="flex items-center text-amber-600 font-medium text-xs sm:text-sm">
+            <span>View winners</span>
+            <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      {/* BOX 6 */}
+      <div 
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="250"
+        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-slate-100 hover:border-emerald-200 hover:shadow-xl"
+        style={{ transition: 'transform 0.3s ease-out, box-shadow 0.5s ease-out, border-color 0.5s ease-out' }}
+        onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.03)'}
+        onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-100/40 via-emerald-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-400 to-blue-600"></div>
+        <div className="relative p-5 sm:p-6 md:p-7 lg:p-8 z-10">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-emerald-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 group-hover:bg-emerald-600 transition-all duration-500">
+            <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-emerald-600 group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-emerald-700 transition-colors duration-500">CHRONICLES</h3>
+          <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed mb-3 sm:mb-4">
+            Documenting the journey and milestones of PITAA's impact in IT academia.
+          </p>
+          <div className="flex items-center text-emerald-600 font-medium text-xs sm:text-sm">
+            <span>Read stories</span>
+            <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
       {/* JOIN SECTION */}
       <section className="relative w-full py-16 sm:py-20 md:py-24 lg:py-28 overflow-hidden">
@@ -571,6 +600,7 @@ export default function Home() {
               data-aos-delay="200"
               className="pt-2 sm:pt-3 md:pt-4"
             >
+              <Link href='/contact-us'>
               <Button 
                 size="lg"
                 className="group relative overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 px-6 sm:px-7 md:px-8 py-4 sm:py-5 md:py-6 text-xs sm:text-sm md:text-base"
@@ -581,6 +611,7 @@ export default function Home() {
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
               </Button>
+              </Link>
             </div>
           </div>
         </div>

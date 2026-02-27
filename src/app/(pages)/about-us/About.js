@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect } from 'react'
 import Image from 'next/image'
-import { Building2, Globe, BookOpen, ChevronRight, FileCheck, Building,Sparkles, Handshake, Star, FileText, Briefcase, ScrollText, ArrowRight, TrendingUp, Award, Users, Target } from 'lucide-react'
+import { Building2, Globe, BookOpen, ChevronRight, FileCheck, Building,Sparkles, Handshake, Star, FileText, Briefcase, ScrollText, ArrowRight, TrendingUp, Award, Users, Target, Link } from 'lucide-react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -18,59 +18,95 @@ const About = () => {
 
   return (
     <main>
-    {/* SECTION 1 - Hero */}
-    <section 
-      data-aos="fade-up"
-      data-aos-duration="800"
-      className="relative w-full py-10 md:py-14 overflow-hidden bg-white"
-    >
-      
-      {/* Clean Background */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-blue-50/50 to-transparent"></div>
-      </div>
+  {/* SECTION 1 - Hero */}
+<section 
+  data-aos="fade-up"
+  data-aos-duration="800"
+  className="relative w-full py-10 md:py-14 overflow-hidden bg-white"
+>
+  
+  {/* Clean Background */}
+  <div className="absolute inset-0">
+    <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-blue-50/50 to-transparent"></div>
+  </div>
 
-      {/* Content Container */}
-      <div className="relative max-w-3xl mx-auto px-6 md:px-8 text-center">
-        
-        {/* Elegant Heading */}
-        <div 
-          data-aos="fade-up"
-          data-aos-duration="600"
-          data-aos-delay="100"
-          className="space-y-3 mb-8"
-        >
-          <h1 className="text-3xl md:text-4xl font-light text-slate-900">
-            Pakistan Information Technology
-          </h1>
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-800">
-            Academic Association
-          </h2>
-          <div className="flex justify-center gap-2 pt-2">
-            <div className="w-12 h-0.5 bg-blue-200 rounded-full"></div>
-            <div className="w-2 h-0.5 bg-blue-400 rounded-full"></div>
-            <div className="w-12 h-0.5 bg-blue-200 rounded-full"></div>
-          </div>
-        </div>
-        
-        {/* Description */}
-        <div 
-          data-aos="fade-up"
-          data-aos-duration="600"
-          data-aos-delay="200"
-          className="space-y-4 text-slate-600"
-        >
-          <p className="text-base md:text-lg leading-relaxed">
-            <span className="font-semibold text-blue-800">PITAA</span> is going to be established in January, 2025 by a collective of IT educators and IT academic institutions with the aim of creating a functional platform dedicated to the growth and collaboration of IT academia in Pakistan.
-          </p>
-          
-          <p className="text-sm md:text-base leading-relaxed text-slate-500">
-            Today, PITAA stands as the first and only IT Academic Association in Pakistan, representing the collective voice of IT academia. It is committed to addressing the challenges of IT education by lobbying with the government, enhancing the visibility of Pakistani academic excellence globally, and building a platform for collaboration and growth within the academic sector.
-          </p>
-        </div>
-        
+  {/* Top Right Object - Floating Particles (Responsive) */}
+  <div className="absolute -top-5 sm:-top-8 md:-top-10 right-0 w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 opacity-80">
+    {/* Soft glow */}
+    <div className="absolute top-5 right-5 sm:top-8 sm:right-8 md:top-10 md:right-10 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 bg-indigo-500/10 rounded-full blur-xl sm:blur-2xl"></div>
+    
+    {/* Particles */}
+    <div className="absolute top-0 right-10 sm:right-15 md:right-20 w-1.5 h-1.5 sm:w-2 sm:h-2 md:w-3 md:h-3 bg-indigo-600/60 rounded-full animate-pulse"></div>
+    <div className="absolute top-10 right-20 sm:top-15 sm:right-30 md:top-20 md:right-40 w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 bg-indigo-500/70 rounded-full animate-pulse"></div>
+    <div className="absolute top-20 right-5 sm:top-30 sm:right-8 md:top-40 md:right-10 w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 bg-indigo-600/50 rounded-full animate-pulse"></div>
+    <div className="absolute top-30 right-15 sm:top-45 sm:right-25 md:top-60 md:right-30 w-1.5 h-1.5 sm:w-2 sm:h-2 md:w-2.5 md:h-2.5 bg-indigo-700/60 rounded-full animate-pulse"></div>
+    <div className="absolute top-16 right-25 sm:top-24 sm:right-35 md:top-32 md:right-50 w-1 h-1 sm:w-1.5 sm:h-1.5 md:w-2 md:h-2 bg-indigo-500/80 rounded-full"></div>
+    
+    {/* Connecting lines */}
+    <svg className="absolute top-0 right-0 w-full h-full opacity-30">
+      <line x1="60" y1="10" x2="80" y2="30" stroke="#4f46e5" strokeWidth="1" strokeDasharray="3 3"/>
+      <line x1="80" y1="30" x2="100" y2="20" stroke="#4f46e5" strokeWidth="1" strokeDasharray="3 3"/>
+    </svg>
+  </div>
+
+  {/* Bottom Left Object - Half Visible (Lighter & Responsive) */}
+  <div className="absolute -bottom-16 sm:-bottom-20 md:-bottom-24 left-0 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 opacity-70">
+    {/* Soft background glow */}
+    <div className="absolute bottom-5 left-5 sm:bottom-8 sm:left-8 md:bottom-10 md:left-10 w-28 h-28 sm:w-40 sm:h-40 md:w-56 md:h-56 bg-indigo-400/20 rounded-full blur-lg sm:blur-xl"></div>
+    
+    {/* Single elegant circle */}
+    <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 md:bottom-5 md:left-5 w-32 h-32 sm:w-44 sm:h-44 md:w-60 md:h-60 border-2 border-indigo-500/30 rounded-full"></div>
+    
+    {/* Inner subtle circle */}
+    <div className="absolute bottom-8 left-8 sm:bottom-10 sm:left-10 md:bottom-12 md:left-12 w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 border border-indigo-400/30 rounded-full"></div>
+    
+    {/* Minimal dots */}
+    <div className="absolute bottom-14 left-14 sm:bottom-18 sm:left-18 md:bottom-20 md:left-20 w-1 h-1 sm:w-1.5 sm:h-1.5 md:w-1.5 md:h-1.5 bg-indigo-500/50 rounded-full"></div>
+    <div className="absolute bottom-22 left-22 sm:bottom-28 sm:left-28 md:bottom-32 md:left-32 w-1 h-1 sm:w-1.5 sm:h-1.5 md:w-1.5 md:h-1.5 bg-indigo-600/50 rounded-full"></div>
+    <div className="absolute bottom-28 left-10 sm:bottom-35 sm:left-12 md:bottom-40 md:left-16 w-0.5 h-0.5 sm:w-1 sm:h-1 md:w-1 md:h-1 bg-indigo-400/60 rounded-full"></div>
+  </div>
+
+  {/* Content Container */}
+  <div className="relative max-w-3xl mx-auto px-4 sm:px-6 md:px-8 text-center z-10">
+    
+    {/* Elegant Heading */}
+    <div 
+      data-aos="fade-up"
+      data-aos-duration="600"
+      data-aos-delay="100"
+      className="space-y-3 mb-8"
+    >
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-light text-slate-900">
+        Pakistan Information Technology
+      </h1>
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-800">
+        Academic Association
+      </h2>
+      <div className="flex justify-center gap-2 pt-2">
+        <div className="w-12 h-0.5 bg-blue-200 rounded-full"></div>
+        <div className="w-2 h-0.5 bg-blue-400 rounded-full"></div>
+        <div className="w-12 h-0.5 bg-blue-200 rounded-full"></div>
       </div>
-    </section>
+    </div>
+    
+    {/* Description */}
+    <div 
+      data-aos="fade-up"
+      data-aos-duration="600"
+      data-aos-delay="200"
+      className="space-y-4 text-slate-600"
+    >
+      <p className="text-sm sm:text-base md:text-lg leading-relaxed">
+        <span className="font-semibold text-blue-800">PITAA</span> is going to be established in January, 2025 by a collective of IT educators and IT academic institutions with the aim of creating a functional platform dedicated to the growth and collaboration of IT academia in Pakistan.
+      </p>
+      
+      <p className="text-xs sm:text-sm md:text-base leading-relaxed text-slate-500">
+        Today, PITAA stands as the first and only IT Academic Association in Pakistan, representing the collective voice of IT academia. It is committed to addressing the challenges of IT education by lobbying with the government, enhancing the visibility of Pakistani academic excellence globally, and building a platform for collaboration and growth within the academic sector.
+      </p>
+    </div>
+    
+  </div>
+</section>
 
     {/* SECTION 2 - Chairman Message */}
     <section 
@@ -714,21 +750,24 @@ const About = () => {
                   data-aos-duration="600"
                   data-aos-delay="200"
                 >
-                  <button className="group/btn relative inline-block">
-                    {/* Event Horizon */}
-                    <div className="absolute -inset-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur-xl opacity-30 group-hover/btn:opacity-60 transition-opacity animate-pulse"></div>
-                    <div className="absolute -inset-2 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full blur-md opacity-40 group-hover/btn:opacity-70 transition-opacity"></div>
-          
-                    {/* Button Core */}
-                    <div className="relative flex items-center gap-3 px-12 py-6 bg-slate-900 text-white font-bold text-lg rounded-full border-2 border-blue-500/50 shadow-2xl overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
-                      <span className="relative z-10">Discover More</span>
-                      <ArrowRight className="relative z-10 w-5 h-5 group-hover/btn:translate-x-2 transition-transform" />
-            
-                      {/* Accretion Disk */}
-                      <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-20 h-20 bg-gradient-to-t from-blue-500/20 to-transparent rounded-full blur-xl"></div>
-                    </div>
-                  </button>
+                  
+                  <a href="/contact-us" className="inline-block">
+  <button className="group/btn relative inline-block">
+    {/* Event Horizon */}
+    <div className="absolute -inset-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur-xl opacity-30 group-hover/btn:opacity-60 transition-opacity animate-pulse"></div>
+    <div className="absolute -inset-2 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full blur-md opacity-40 group-hover/btn:opacity-70 transition-opacity"></div>
+
+    {/* Button Core */}
+    <div className="relative flex items-center gap-3 px-12 py-6 bg-slate-900 text-white font-bold text-lg rounded-full border-2 border-blue-500/50 shadow-2xl overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
+      <span className="relative z-10">Discover More</span>
+      <ArrowRight className="relative z-10 w-5 h-5 group-hover/btn:translate-x-2 transition-transform" />
+
+      {/* Accretion Disk */}
+      <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-20 h-20 bg-gradient-to-t from-blue-500/20 to-transparent rounded-full blur-xl"></div>
+    </div>
+  </button>
+</a>
                 </div>
               </div>
             </div>
