@@ -324,7 +324,7 @@ const About = () => {
               data-aos-duration="600"
               data-aos-delay="50"
             >
-              <span className="text-indigo-600 text-sm font-medium tracking-wider uppercase bg-indigo-50 px-4 py-2 rounded-full border border-indigo-100">
+              <span className="text-blue-800 text-sm font-medium tracking-wider uppercase bg-indigo-50 px-4 py-2 rounded-full border border-indigo-100">
                 Our Objective
               </span>
             </div>
@@ -737,7 +737,7 @@ const About = () => {
                     data-aos-delay="50"
                     className="text-2xl md:text-3xl font-light text-white/60 mb-3 tracking-wide"
                   >
-                    PITAA Always Ready
+                    PITAA Always Ready For
                   </h3>
           
                   <div 
