@@ -285,8 +285,7 @@ export default function Home() {
               <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900 tracking-tight px-3 sm:px-4">
                 Team
               </h2>
-              <span className="absolute -bottom-2 sm:-bottom-3 left-1/2 -translate-x-1/2 w-[120%] h-0.5 bg-gradient-to-r from-transparent via-blue-600 to-transparent rounded-full"></span>
-            </div>
+<span className="absolute -bottom-0 left-1/2 -translate-x-1/2 w-18 sm:w-22 md:w-26 h-0.5 bg-blue-300 rounded-full"></span>            </div>
           </div>
 
           <div 
@@ -313,7 +312,7 @@ export default function Home() {
         </div>
       </div>
 
-    {/* FEATURES SECTION */}
+  {/* FEATURES SECTION */}
 <div className="w-full bg-gradient-to-b from-white to-slate-50 py-12 sm:py-16 md:py-20 overflow-hidden">
   <div className="container mx-auto px-4 sm:px-5 md:px-6">
     
@@ -326,35 +325,35 @@ export default function Home() {
         <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900 tracking-tight px-3 sm:px-4">
           Pitaa Features
         </h2>
-        <span className="absolute -bottom-2 sm:-bottom-3 left-1/2 -translate-x-1/2 w-[120%] h-0.5 bg-gradient-to-r from-transparent via-blue-600 to-transparent rounded-full"></span>
-      </div>
+            <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-300 rounded-full"></span>
+   </div>
     </div>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
       
-      {/* BOX 1 */}
+      {/* BOX 1 - NOW PURPLE (FROM BOX 4) */}
       <div 
         data-aos="fade-up"
         data-aos-duration="600"
         data-aos-delay="0"
-        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-slate-100 hover:border-blue-200 hover:shadow-xl"
+        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-slate-100 hover:border-purple-200 hover:shadow-xl"
         style={{ transition: 'transform 0.3s ease-out, box-shadow 0.5s ease-out, border-color 0.5s ease-out' }}
         onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.03)'}
         onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-100/40 via-blue-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-blue-600"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-100/40 via-purple-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-blue-600"></div>
         <div className="relative p-5 sm:p-6 md:p-7 lg:p-8 z-10">
-          <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 group-hover:bg-blue-600 transition-all duration-500">
-            <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-blue-600 group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 group-hover:bg-purple-600 transition-all duration-500">
+            <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-purple-600 group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
             </svg>
           </div>
-          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-blue-700 transition-colors duration-500">PITAA LINKUP</h3>
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-purple-700 transition-colors duration-500">PITAA LINKUP</h3>
           <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed mb-3 sm:mb-4">
             Connect with industry professionals and academic leaders through our exclusive networking platform.
           </p>
-          <div className="flex items-center text-blue-600 font-medium text-xs sm:text-sm">
+          <div className="flex items-center text-purple-600 font-medium text-xs sm:text-sm">
             <span>Learn more</span>
             <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -425,29 +424,29 @@ export default function Home() {
         </div>
       </div>
 
-      {/* BOX 4 */}
+      {/* BOX 4 - NOW BLUE (FROM BOX 1) */}
       <div 
         data-aos="fade-up"
         data-aos-duration="600"
         data-aos-delay="150"
-        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-slate-100 hover:border-purple-200 hover:shadow-xl"
+        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-slate-100 hover:border-blue-200 hover:shadow-xl"
         style={{ transition: 'transform 0.3s ease-out, box-shadow 0.5s ease-out, border-color 0.5s ease-out' }}
         onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.03)'}
         onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-100/40 via-purple-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-blue-600"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-100/40 via-blue-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-blue-600"></div>
         <div className="relative p-5 sm:p-6 md:p-7 lg:p-8 z-10">
-          <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 group-hover:bg-purple-600 transition-all duration-500">
-            <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-purple-600 group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 group-hover:bg-blue-600 transition-all duration-500">
+            <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-blue-600 group-hover:text-white transition-colors duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
             </svg>
           </div>
-          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-purple-700 transition-colors duration-500">PERSPECTIVES</h3>
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-blue-700 transition-colors duration-500">PERSPECTIVES</h3>
           <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed mb-3 sm:mb-4">
             Fresh insights and thought leadership from IT academia and industry experts.
           </p>
-          <div className="flex items-center text-purple-600 font-medium text-xs sm:text-sm">
+          <div className="flex items-center text-blue-600 font-medium text-xs sm:text-sm">
             <span>Discover</span>
             <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
