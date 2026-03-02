@@ -49,33 +49,27 @@ const Contact = () => {
   return (
     <main className="relative w-full min-h-screen overflow-hidden bg-white">
       
-      {/* Left Side - Sky Blue Sprays */}
+      {/* Left Side - Soft Blue Gradient */}
       <div className="absolute left-0 top-0 bottom-0 w-1/2 pointer-events-none">
-        <div className="absolute -top-20 -left-20 w-[600px] h-[600px] bg-gradient-to-br from-sky-300/25 via-sky-200/20 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute top-1/3 -left-10 w-[500px] h-[500px] bg-gradient-to-tr from-sky-200/25 via-sky-100/20 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 -left-20 w-[550px] h-[550px] bg-gradient-to-tl from-sky-300/25 via-sky-200/20 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute -top-20 -left-20 w-[600px] h-[600px] bg-gradient-to-br from-blue-100/40 via-blue-50/30 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute top-1/3 -left-10 w-[500px] h-[500px] bg-gradient-to-tr from-blue-100/30 via-blue-50/20 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 -left-20 w-[550px] h-[550px] bg-gradient-to-tl from-blue-100/40 via-blue-50/30 to-transparent rounded-full blur-3xl"></div>
       </div>
 
-      {/* Right Side - Sky Blue Sprays */}
+      {/* Right Side - Soft Blue Gradient */}
       <div className="absolute right-0 top-0 bottom-0 w-1/2 pointer-events-none">
-        <div className="absolute -top-20 -right-20 w-[600px] h-[600px] bg-gradient-to-bl from-sky-300/25 via-sky-200/20 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute top-1/3 -right-10 w-[500px] h-[500px] bg-gradient-to-tl from-sky-200/25 via-sky-100/20 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 -right-20 w-[550px] h-[550px] bg-gradient-to-br from-sky-300/25 via-sky-200/20 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute -top-20 -right-20 w-[600px] h-[600px] bg-gradient-to-bl from-blue-100/40 via-blue-50/30 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute top-1/3 -right-10 w-[500px] h-[500px] bg-gradient-to-tl from-blue-100/30 via-blue-50/20 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 -right-20 w-[550px] h-[550px] bg-gradient-to-br from-blue-100/40 via-blue-50/30 to-transparent rounded-full blur-3xl"></div>
       </div>
 
-      {/* Top Center Sky Spray */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-b from-sky-200/20 to-transparent rounded-full blur-3xl pointer-events-none"></div>
-      
-      {/* Bottom Center Sky Spray */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-t from-sky-200/20 to-transparent rounded-full blur-3xl pointer-events-none"></div>
-
-      {/* Subtle Pattern Overlay */}
-      <div className="absolute inset-0 opacity-[0.02] pointer-events-none" style={{
-        backgroundImage: `radial-gradient(circle at 3px 3px, #1e40af 1px, transparent 0)`,
-        backgroundSize: '60px 60px'
+      {/* Very Subtle Pattern Overlay */}
+      <div className="absolute inset-0 opacity-[0.01] pointer-events-none" style={{
+        backgroundImage: `radial-gradient(circle at 4px 4px, #3b82f6 1px, transparent 0)`,
+        backgroundSize: '80px 80px'
       }}></div>
 
-      {/* Main Content */}
+      {/* Main Content - EXACTLY THE SAME */}
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
         
         {/* Header */}
@@ -83,8 +77,12 @@ const Contact = () => {
           <h1 data-aos="fade-up" data-aos-duration="600" data-aos-delay="50" className="text-4xl md:text-5xl font-light text-slate-800 mb-3">
             Get in <span className="font-bold text-blue-800">Touch</span>
           </h1>
-          <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="100" className="w-20 h-1.5 bg-blue-800 mx-auto rounded-full mb-4"></div>
-          <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" className="text-slate-500 max-w-2xl mx-auto">
+<div className="flex justify-center gap-2 pt-1">
+        <div className="w-12 h-0.5 bg-blue-200 rounded-full"></div>
+        <div className="w-2 h-0.5 bg-blue-400 rounded-full"></div>
+        <div className="w-12 h-0.5 bg-blue-200 rounded-full"></div>
+      </div>
+                <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" className="text-slate-500 max-w-2xl mx-auto pt-2">
             We'd love to hear from you. Send us a message and we'll respond as soon as possible.
           </p>
         </div>

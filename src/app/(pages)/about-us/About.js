@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <main>
-  {/* SECTION 1 - Hero */}
+ {/* SECTION 1 - Hero */}
 <section 
   data-aos="fade-up"
   data-aos-duration="800"
@@ -49,21 +49,47 @@ const About = () => {
     </svg>
   </div>
 
-  {/* Bottom Left Object - Half Visible (Lighter & Responsive) */}
-  <div className="absolute -bottom-16 sm:-bottom-20 md:-bottom-24 left-0 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 opacity-70">
-    {/* Soft background glow */}
-    <div className="absolute bottom-5 left-5 sm:bottom-8 sm:left-8 md:bottom-10 md:left-10 w-28 h-28 sm:w-40 sm:h-40 md:w-56 md:h-56 bg-indigo-400/20 rounded-full blur-lg sm:blur-xl"></div>
+  {/* Bottom Left Object - MINIMALISTIC & DECENT DESIGN */}
+  <div className="absolute -bottom-16 sm:-bottom-20 md:-bottom-24 left-0 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 opacity-40">
     
-    {/* Single elegant circle */}
-    <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 md:bottom-5 md:left-5 w-32 h-32 sm:w-44 sm:h-44 md:w-60 md:h-60 border-2 border-indigo-500/30 rounded-full"></div>
-    
-    {/* Inner subtle circle */}
-    <div className="absolute bottom-8 left-8 sm:bottom-10 sm:left-10 md:bottom-12 md:left-12 w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 border border-indigo-400/30 rounded-full"></div>
-    
-    {/* Minimal dots */}
-    <div className="absolute bottom-14 left-14 sm:bottom-18 sm:left-18 md:bottom-20 md:left-20 w-1 h-1 sm:w-1.5 sm:h-1.5 md:w-1.5 md:h-1.5 bg-indigo-500/50 rounded-full"></div>
-    <div className="absolute bottom-22 left-22 sm:bottom-28 sm:left-28 md:bottom-32 md:left-32 w-1 h-1 sm:w-1.5 sm:h-1.5 md:w-1.5 md:h-1.5 bg-indigo-600/50 rounded-full"></div>
-    <div className="absolute bottom-28 left-10 sm:bottom-35 sm:left-12 md:bottom-40 md:left-16 w-0.5 h-0.5 sm:w-1 sm:h-1 md:w-1 md:h-1 bg-indigo-400/60 rounded-full"></div>
+    {/* Main container */}
+    <div className="absolute bottom-0 left-0 w-full h-full">
+      
+      {/* Soft single gradient - very subtle background */}
+      <div className="absolute bottom-8 left-8 sm:bottom-10 sm:left-10 md:bottom-12 md:left-12 w-32 h-32 sm:w-44 sm:h-44 md:w-56 md:h-56 bg-gradient-to-t from-indigo-100/30 to-transparent blur-2xl"></div>
+      
+      {/* Single elegant horizontal line - minimal */}
+      <div className="absolute bottom-16 left-4 sm:bottom-20 sm:left-5 md:bottom-24 md:left-6 w-40 sm:w-52 md:w-64 h-px bg-gradient-to-r from-transparent via-indigo-300/50 to-transparent"></div>
+      
+      {/* Single vertical line - minimal */}
+      <div className="absolute bottom-4 left-20 sm:bottom-5 sm:left-24 md:bottom-6 md:left-32 w-px h-32 sm:h-40 md:h-48 bg-gradient-to-b from-transparent via-indigo-300/50 to-transparent"></div>
+      
+      {/* Three simple dots - arranged minimally */}
+      <div className="absolute bottom-20 left-16 sm:bottom-24 sm:left-20 md:bottom-28 md:left-24 flex space-x-3">
+        <div className="w-1 h-1 bg-indigo-400/60 rounded-full"></div>
+        <div className="w-1 h-1 bg-indigo-500/60 rounded-full"></div>
+        <div className="w-1 h-1 bg-indigo-400/60 rounded-full"></div>
+      </div>
+      
+      {/* Single subtle corner accent */}
+      <div className="absolute bottom-12 left-28 sm:bottom-16 sm:left-36 md:bottom-20 md:left-44">
+        <div className="w-4 h-4 border-b border-r border-indigo-400/40"></div>
+      </div>
+      
+      {/* Very faint intersecting lines - creates minimal grid suggestion */}
+      <svg className="absolute bottom-0 left-0 w-full h-full opacity-20">
+        <line x1="0" y1="40" x2="80" y2="40" stroke="#4f46e5" strokeWidth="0.5" />
+        <line x1="0" y1="70" x2="80" y2="70" stroke="#4f46e5" strokeWidth="0.5" />
+        <line x1="30" y1="0" x2="30" y2="100" stroke="#4f46e5" strokeWidth="0.5" />
+        <line x1="60" y1="0" x2="60" y2="100" stroke="#4f46e5" strokeWidth="0.5" />
+      </svg>
+      
+      {/* Single small abstract shape - very subtle */}
+      <div className="absolute bottom-32 left-8 sm:bottom-40 sm:left-10 md:bottom-48 md:left-12">
+        <div className="w-3 h-3 border border-indigo-400/30 rotate-12"></div>
+      </div>
+      
+    </div>
   </div>
 
   {/* Content Container */}
