@@ -312,7 +312,7 @@ export default function Home() {
         </div>
       </div>
 
-  {/* FEATURES SECTION */}
+ {/* FEATURES SECTION */}
 <div className="w-full bg-gradient-to-b from-white to-slate-50 py-12 sm:py-16 md:py-20 overflow-hidden">
   <div className="container mx-auto px-4 sm:px-5 md:px-6">
     
@@ -325,18 +325,18 @@ export default function Home() {
         <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900 tracking-tight px-3 sm:px-4">
           Pitaa Features
         </h2>
-            <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-300 rounded-full"></span>
-   </div>
+        <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-300 rounded-full"></span>
+      </div>
     </div>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
       
-      {/* BOX 1 - NOW PURPLE (FROM BOX 4) */}
+      {/* BOX 1 - PURPLE */}
       <div 
         data-aos="fade-up"
         data-aos-duration="600"
         data-aos-delay="0"
-        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-slate-100 hover:border-purple-200 hover:shadow-xl"
+        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-purple-200 hover:border-purple-400 hover:shadow-xl"
         style={{ transition: 'transform 0.3s ease-out, box-shadow 0.5s ease-out, border-color 0.5s ease-out' }}
         onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.03)'}
         onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
@@ -362,12 +362,12 @@ export default function Home() {
         </div>
       </div>
 
-      {/* BOX 2 */}
+      {/* BOX 2 - INDIGO */}
       <div 
         data-aos="fade-up"
         data-aos-duration="600"
         data-aos-delay="50"
-        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-slate-100 hover:border-indigo-200 hover:shadow-xl"
+        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-indigo-200 hover:border-indigo-400 hover:shadow-xl"
         style={{ transition: 'transform 0.3s ease-out, box-shadow 0.5s ease-out, border-color 0.5s ease-out' }}
         onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.03)'}
         onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
@@ -393,12 +393,12 @@ export default function Home() {
         </div>
       </div>
 
-      {/* BOX 3 */}
+      {/* BOX 3 - CYAN */}
       <div 
         data-aos="fade-up"
         data-aos-duration="600"
         data-aos-delay="100"
-        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-slate-100 hover:border-cyan-200 hover:shadow-xl"
+        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-cyan-200 hover:border-cyan-400 hover:shadow-xl"
         style={{ transition: 'transform 0.3s ease-out, box-shadow 0.5s ease-out, border-color 0.5s ease-out' }}
         onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.03)'}
         onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
@@ -424,12 +424,12 @@ export default function Home() {
         </div>
       </div>
 
-      {/* BOX 4 - NOW BLUE (FROM BOX 1) */}
+      {/* BOX 4 - BLUE */}
       <div 
         data-aos="fade-up"
         data-aos-duration="600"
         data-aos-delay="150"
-        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-slate-100 hover:border-blue-200 hover:shadow-xl"
+        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-blue-200 hover:border-blue-400 hover:shadow-xl"
         style={{ transition: 'transform 0.3s ease-out, box-shadow 0.5s ease-out, border-color 0.5s ease-out' }}
         onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.03)'}
         onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
@@ -455,12 +455,12 @@ export default function Home() {
         </div>
       </div>
 
-      {/* BOX 5 */}
+      {/* BOX 5 - AMBER */}
       <div 
         data-aos="fade-up"
         data-aos-duration="600"
         data-aos-delay="200"
-        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-slate-100 hover:border-amber-200 hover:shadow-xl"
+        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-amber-200 hover:border-amber-400 hover:shadow-xl"
         style={{ transition: 'transform 0.3s ease-out, box-shadow 0.5s ease-out, border-color 0.5s ease-out' }}
         onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.03)'}
         onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
@@ -486,12 +486,12 @@ export default function Home() {
         </div>
       </div>
 
-      {/* BOX 6 */}
+      {/* BOX 6 - EMERALD */}
       <div 
         data-aos="fade-up"
         data-aos-duration="600"
         data-aos-delay="250"
-        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-slate-100 hover:border-emerald-200 hover:shadow-xl"
+        className="group relative bg-white rounded-xl sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden border border-emerald-200 hover:border-emerald-400 hover:shadow-xl"
         style={{ transition: 'transform 0.3s ease-out, box-shadow 0.5s ease-out, border-color 0.5s ease-out' }}
         onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.03)'}
         onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}

@@ -21,59 +21,42 @@ const Association = () => {
       {/* Light Gradient Background - Bohat light aur elegant */}
       <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-blue-50/30 to-transparent"></div>
       
-{/* Top Right Corner - Circuit Board Design */}
-<div className="absolute -top-5 -right-5 sm:-top-6 sm:-right-6 md:-top-8 md:-right-8 lg:-top-12 lg:-right-12 xl:-top-16 xl:-right-16 w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96">
+{/* Top Right Corner - Corporate Excellence */}
+<div className="absolute -top-8 -right-8 sm:-top-10 sm:-right-10 md:-top-12 md:-right-12 lg:-top-16 lg:-right-16 w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96">
   
-  {/* Circuit container */}
   <div className="absolute top-0 right-0 w-full h-full">
     
-    {/* Main chip/cpu */}
-    <div className="absolute lg:top-10 lg:right-10 xl:top-12 xl:right-12 top-6 right-6 w-14 h-14 lg:w-20 lg:h-20 xl:w-24 xl:h-24">
-      {/* Chip base */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-blue-400/10 rounded-lg"></div>
-      <div className="absolute inset-0 border-2 border-blue-600/50 rounded-lg"></div>
-      
-      {/* Chip details */}
-      <div className="absolute top-1 left-1 right-1 h-3 bg-blue-600/30 rounded-t-md"></div>
-      <div className="absolute bottom-1 left-1 right-1 h-3 bg-blue-600/30 rounded-b-md"></div>
-      
-      {/* Connection pins */}
-      <div className="absolute -left-3 top-1/2 -translate-y-1/2 flex flex-col gap-1">
-        <div className="w-2 h-1 bg-blue-600/60 rounded-l-full"></div>
-        <div className="w-3 h-1 bg-blue-600/70 rounded-l-full"></div>
-        <div className="w-2 h-1 bg-blue-600/60 rounded-l-full"></div>
-      </div>
-      
-      <div className="absolute -right-3 top-1/2 -translate-y-1/2 flex flex-col gap-1">
-        <div className="w-2 h-1 bg-blue-600/60 rounded-r-full"></div>
-        <div className="w-3 h-1 bg-blue-600/70 rounded-r-full"></div>
-        <div className="w-2 h-1 bg-blue-600/60 rounded-r-full"></div>
+    {/* Corporate layers */}
+    <div className="absolute lg:top-16 lg:right-16 xl:top-20 xl:right-20 top-12 right-12">
+      <div className="relative">
+        {/* Abstract building/bar structure */}
+        <div className="flex items-end gap-1">
+          <div className="w-3 h-8 lg:w-4 lg:h-12 xl:w-5 xl:h-16 bg-blue-600/40 rounded-t-md"></div>
+          <div className="w-3 h-12 lg:w-4 lg:h-16 xl:w-5 xl:h-20 bg-blue-500/50 rounded-t-md"></div>
+          <div className="w-3 h-16 lg:w-4 lg:h-20 xl:w-5 xl:h-24 bg-blue-600/60 rounded-t-md"></div>
+          <div className="w-3 h-10 lg:w-4 lg:h-14 xl:w-5 xl:h-18 bg-blue-400/40 rounded-t-md"></div>
+        </div>
+        
+        {/* Connecting lines - representing growth */}
+        <svg className="absolute -top-8 -left-4 w-20 h-20" viewBox="0 0 50 50">
+          <line x1="5" y1="30" x2="15" y2="20" stroke="#3b82f6" strokeWidth="1" strokeDasharray="3 2" />
+          <line x1="15" y1="20" x2="25" y2="25" stroke="#2563eb" strokeWidth="1" strokeDasharray="3 2" />
+          <line x1="25" y1="25" x2="35" y2="15" stroke="#1e40af" strokeWidth="1" strokeDasharray="3 2" />
+        </svg>
       </div>
     </div>
     
-    {/* Circuit paths */}
-    <svg className="absolute top-0 right-0 w-full h-full opacity-60">
-      {/* Horizontal paths */}
-      <line x1="40%" y1="30%" x2="70%" y2="30%" stroke="#3b82f6" strokeWidth="1.5" strokeDasharray="4 3"/>
-      <line x1="30%" y1="50%" x2="60%" y2="50%" stroke="#3b82f6" strokeWidth="1.2" strokeDasharray="3 2"/>
-      <line x1="20%" y1="70%" x2="50%" y2="70%" stroke="#3b82f6" strokeWidth="1" strokeDasharray="5 3"/>
-      
-      {/* Vertical paths */}
-      <line x1="50%" y1="20%" x2="50%" y2="50%" stroke="#3b82f6" strokeWidth="1.5" strokeDasharray="4 3"/>
-      <line x1="70%" y1="40%" x2="70%" y2="70%" stroke="#3b82f6" strokeWidth="1.2" strokeDasharray="3 2"/>
-      
-      {/* Connection points */}
-      <circle cx="50%" cy="30%" r="2" fill="#3b82f6" fillOpacity="0.6"/>
-      <circle cx="70%" cy="50%" r="2" fill="#3b82f6" fillOpacity="0.6"/>
-      <circle cx="30%" cy="70%" r="2" fill="#3b82f6" fillOpacity="0.6"/>
-    </svg>
+    {/* Floating elements - representing innovation */}
+    <div className="absolute lg:top-32 lg:right-28 xl:top-40 xl:right-36 top-20 right-24">
+      <div className="relative">
+        <div className="w-1.5 h-1.5 bg-blue-600/60 rounded-full"></div>
+        <div className="absolute -top-3 -left-2 w-1 h-1 bg-blue-500/50 rounded-full animate-pulse"></div>
+        <div className="absolute top-2 left-3 w-1 h-1 bg-blue-400/50 rounded-full animate-pulse"></div>
+      </div>
+    </div>
     
-    {/* Data flow dots */}
-    <div className="absolute lg:top-24 lg:right-28 xl:top-32 xl:right-36 top-16 right-20 w-1.5 h-1.5 bg-blue-600/80 rounded-full animate-pulse"></div>
-    <div className="absolute lg:top-40 lg:right-20 xl:top-52 xl:right-24 top-28 right-16 w-1.5 h-1.5 bg-blue-600/80 rounded-full animate-pulse"></div>
-    
-    {/* Tech glow */}
-    <div className="absolute lg:top-12 lg:right-12 xl:top-16 xl:right-16 top-8 right-8 w-40 h-40 lg:w-56 lg:h-56 xl:w-72 xl:h-72 bg-blue-500/15 rounded-full blur-3xl"></div>
+    {/* Professional glow */}
+    <div className="absolute lg:top-12 lg:right-12 xl:top-16 xl:right-16 top-8 right-8 w-40 h-40 lg:w-56 lg:h-56 xl:w-72 xl:h-72 bg-gradient-to-br from-blue-600/10 via-blue-400/5 to-transparent rounded-full blur-3xl"></div>
   </div>
 </div>
 

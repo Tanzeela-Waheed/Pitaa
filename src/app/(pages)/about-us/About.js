@@ -49,35 +49,7 @@ const About = () => {
     </svg>
   </div>
 
-  {/* LEFT SIDE - ENHANCED BLUR CIRCLE (Hidden on mobile, visible on larger screens) */}
-  <div className="hidden sm:block absolute -bottom-16 sm:-bottom-20 md:-bottom-24 left-0 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 opacity-40 sm:opacity-50 md:opacity-60">
-    
-    {/* Main large blur circle - soft and elegant */}
-    <div className="absolute bottom-8 left-8 sm:bottom-10 sm:left-10 md:bottom-12 md:left-12 w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72">
-      {/* Primary glow - deep blue */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/15 sm:from-blue-600/18 md:from-blue-600/20 via-indigo-500/10 sm:via-indigo-500/12 md:via-indigo-500/15 to-purple-600/5 sm:to-purple-600/8 md:to-purple-600/10 rounded-full blur-3xl"></div>
-      
-      {/* Secondary glow - medium layer */}
-      <div className="absolute inset-8 bg-gradient-to-br from-indigo-500/15 sm:from-indigo-500/18 md:from-indigo-500/20 via-blue-400/10 sm:via-blue-400/12 md:via-blue-400/15 to-transparent rounded-full blur-2xl"></div>
-      
-      {/* Inner glow - softest layer */}
-      <div className="absolute inset-16 bg-gradient-to-r from-blue-400/15 sm:from-blue-400/18 md:from-blue-400/20 to-indigo-500/15 sm:to-indigo-500/18 md:to-indigo-500/20 rounded-full blur-xl"></div>
-    </div>
-    
-    {/* Floating particles inside blur - very subtle */}
-    <div className="absolute bottom-24 left-20 sm:bottom-32 sm:left-24 md:bottom-40 md:left-28">
-      <div className="relative w-20 h-20">
-        <div className="absolute top-0 left-0 w-1 h-1 bg-indigo-400/30 sm:bg-indigo-400/35 md:bg-indigo-400/40 rounded-full animate-pulse"></div>
-        <div className="absolute bottom-0 right-0 w-1.5 h-1.5 bg-blue-500/20 sm:bg-blue-500/25 md:bg-blue-500/30 rounded-full"></div>
-        <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-indigo-600/15 sm:bg-indigo-600/20 md:bg-indigo-600/25 rounded-full"></div>
-      </div>
-    </div>
-    
-    {/* Soft light rays - adds depth */}
-    <div className="absolute bottom-16 left-16 sm:bottom-20 sm:left-20 md:bottom-24 md:left-24">
-      <div className="w-32 h-32 bg-gradient-to-t from-transparent via-indigo-300/15 sm:via-indigo-300/18 md:via-indigo-300/20 to-transparent blur-2xl rotate-45"></div>
-    </div>
-  </div>
+
 
   {/* Content Container */}
   <div className="relative max-w-3xl mx-auto px-4 sm:px-6 md:px-8 text-center z-10">
