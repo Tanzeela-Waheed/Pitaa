@@ -156,152 +156,155 @@ export default function Home() {
 
 
 <section className="relative w-full bg-gradient-to-b from-white to-slate-50 overflow-hidden">
-      {/* Background layers – unchanged */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50/50 to-blue-100"></div>
-      <div className="absolute top-0 -left-20 w-48 sm:w-64 md:w-80 lg:w-96 h-48 sm:h-64 md:h-80 lg:h-96 bg-blue-200/30 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 -right-20 w-48 sm:w-64 md:w-80 lg:w-96 h-48 sm:h-64 md:h-80 lg:h-96 bg-indigo-200/30 rounded-full blur-3xl"></div>
-      <div className="absolute inset-0 opacity-[0.02]" style={{
-        backgroundImage: `radial-gradient(circle at 2px 2px, #2563eb 1px, transparent 0)`,
-        backgroundSize: '48px 48px'
-      }}></div>
+  {/* Background layers – unchanged */}
+  <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50/50 to-blue-100"></div>
+  <div className="absolute top-0 -left-20 w-48 sm:w-64 md:w-80 lg:w-96 h-48 sm:h-64 md:h-80 lg:h-96 bg-blue-200/30 rounded-full blur-3xl"></div>
+  <div className="absolute bottom-0 -right-20 w-48 sm:w-64 md:w-80 lg:w-96 h-48 sm:h-64 md:h-80 lg:h-96 bg-indigo-200/30 rounded-full blur-3xl"></div>
+  <div className="absolute inset-0 opacity-[0.02]" style={{
+    backgroundImage: `radial-gradient(circle at 2px 2px, #2563eb 1px, transparent 0)`,
+    backgroundSize: '48px 48px'
+  }}></div>
 
-      {/* Grid container – fixed negative margins */}
-      <div className="container mx-auto px-4 sm:px-5 md:px-6 
-                      grid grid-cols-1 lg:grid-cols-2 
-                      gap-8 sm:gap-10 lg:gap-12 
-                      items-center 
-                      relative 
-                      py-8 sm:py-12 md:py-16 lg:py-0
-                      lg:-my-[60px] xl:-my-[90px]">
-        
-        {/* LEFT SLANTED BACKGROUND – fixed left positioning */}
-        <div
-          className="absolute -left-[60px] top-0 h-full w-[52%] 
-                     bg-gradient-to-br from-[#005A9C] via-[#005A9C] to-[#005A9C]
-                     hidden lg:block"
-          style={{
-            clipPath: "polygon(0 0, 95% 0, 70% 100%, 0% 100%)"
-          }}
-        ></div>
+  {/* Grid container – fixed negative margins */}
+  <div className="container mx-auto px-4 sm:px-5 md:px-6 
+                  grid grid-cols-1 lg:grid-cols-2 
+                  gap-8 sm:gap-10 lg:gap-12 
+                  items-center 
+                  relative 
+                  py-8 sm:py-12 md:py-16 lg:py-0
+                  lg:-my-[60px] xl:-my-[90px]">
+    
+    {/* LEFT SLANTED BACKGROUND – appears first (no delay) */}
+    <div
+      data-aos="fade-right"
+      data-aos-duration="800"
+      className="absolute -left-[60px] top-0 h-full w-[52%] 
+                 bg-gradient-to-br from-[#005A9C] via-[#005A9C] to-[#005A9C]
+                 hidden lg:block"
+      style={{
+        clipPath: "polygon(0 0, 95% 0, 70% 100%, 0% 100%)"
+      }}
+    ></div>
 
-        {/* IMAGE SECTION */}
-        <div 
-          data-aos="fade-right"
-          data-aos-duration="800"
-          className="relative flex order-2 lg:order-1 justify-center items-center w-full"
-        >
-          <div className="relative w-full 
-                          max-w-[90%] sm:max-w-[80%] md:max-w-[70%] 
-                          lg:max-w-[760px] xl:max-w-[820px] 
-                          mx-auto lg:mx-0 lg:mr-8">
-            {/* Image – responsive heights using min-[480px] for xs-like breakpoint */}
-            <div className="relative w-full 
-                            h-[400px] min-[480px]:h-[450px] sm:h-[500px] md:h-[600px] 
-                            lg:h-[750px] xl:h-[1020px] 
-                            transition-all duration-300">
-              <Image
-                src="/images/aboutimg.png"
-                alt="CEO Portrait"
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 640px) 90vw, (max-width: 768px) 80vw, (max-width: 1024px) 70vw, 820px"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* CONTENT SECTION */}
-        <div 
-          data-aos="fade-left"
-          data-aos-duration="800"
-          className="flex flex-col justify-center space-y-4 sm:space-y-5 md:space-y-6 
-                     order-1 lg:order-2 text-center lg:text-left
-                     px-2 sm:px-0"
-        >
-          {/* Badge – fixed size, non-responsive */}
-<p className="inline-flex items-center text-blue-800 font-semibold tracking-widest uppercase 
-              text-sm 
-              bg-blue-50 px-4 py-2 rounded-full 
-              border border-blue-200 mx-auto lg:mx-0 whitespace-nowrap">
-  Hey! We Are Pitaa
-</p>
-
-          {/* Heading – line breaks using min-[480px] for xs */}
-          <h2 className="text-2xl min-[480px]:text-3xl sm:text-4xl md:text-5xl lg:text-5xl 
-                         font-black leading-tight text-slate-900 tracking-tight">
-            Building Stronger <br className="hidden min-[480px]:block" />
-            Connections Between <br className="hidden min-[480px]:block" />
-            <span className="text-blue-800 relative inline-block">
-              IT Academia & Industry
-              <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-300 rounded-full"></span>
-            </span>
-          </h2>
-
-          {/* Mission */}
-          <div 
-            data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="100"
-            className="relative pl-10 sm:pl-12 md:pl-14 group text-left"
-          >
-            <div className="absolute left-0 top-0.5 p-1.5 sm:p-2 md:p-2.5 bg-blue-100 rounded-lg shadow-sm 
-                            group-hover:shadow-md group-hover:bg-blue-200 transition-all duration-300">
-              <Cpu className="text-blue-800 w-4 h-4 sm:w-5 sm:h-5" />
-            </div>
-            <h4 className="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-1 sm:mb-1.5">
-              Our Mission
-            </h4>
-            <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed">
-              PITAA’s role as a voice for IT academia is crucial. It aims to address challenges that individual institutions cannot tackle alone, such as influencing policy frameworks, offering input on teaching standards, and aligning curriculum development with industry demands.
-            </p>
-          </div>
-
-          {/* Vision */}
-          <div 
-            data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="200"
-            className="relative pl-10 sm:pl-12 md:pl-14 group text-left"
-          >
-            <div className="absolute left-0 top-0.5 p-1.5 sm:p-2 md:p-2.5 bg-blue-100 rounded-lg shadow-sm 
-                            group-hover:shadow-md group-hover:bg-blue-200 transition-all duration-300">
-              <Sparkles className="text-blue-800 w-4 h-4 sm:w-5 sm:h-5" />
-            </div>
-            <h4 className="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-1 sm:mb-1.5">
-              Our Vision
-            </h4>
-            <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed">
-              By collaborating with academic leaders, industry professionals, and government representatives, PITAA aims to advance IT academics, align educational practices with industry needs, and promote innovation, skill development, and partnerships to build a globally competitive and future-ready IT workforce in Pakistan.
-            </p>
-          </div>
-
-          {/* Button */}
-          <div 
-            data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-delay="300"
-            className="flex justify-center lg:justify-start mt-2"
-          >
-            <Link href='/contact-us'>
-              <Button
-                size="lg"
-                className="group px-6 sm:px-7 md:px-8 lg:px-9 
-                           py-3 sm:py-4 md:py-5 lg:py-6 
-                           text-xs sm:text-sm md:text-base font-semibold 
-                           rounded-full bg-blue-800 text-white shadow-xl shadow-blue-900/30
-                           hover:bg-blue-900 hover:shadow-2xl hover:-translate-y-1 hover:scale-105 
-                           transition-all duration-300 w-fit"
-              >
-                Discover More
-                <ArrowRight className="ml-1.5 sm:ml-2 w-4 h-4 sm:w-5 sm:h-5 
-                                       transition-all duration-300 group-hover:translate-x-2" />
-              </Button>
-            </Link>
-          </div>
+    {/* IMAGE SECTION – appears after cut with a nice fade-up */}
+    <div 
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-delay="300"
+      className="relative flex order-2 lg:order-1 justify-center items-center w-full"
+    >
+      <div className="relative w-full 
+                      max-w-[90%] sm:max-w-[80%] md:max-w-[70%] 
+                      lg:max-w-[760px] xl:max-w-[820px] 
+                      mx-auto lg:mx-0 lg:mr-8">
+        {/* Image – responsive heights */}
+        <div className="relative w-full 
+                        h-[400px] min-[480px]:h-[450px] sm:h-[500px] md:h-[600px] 
+                        lg:h-[750px] xl:h-[1020px] 
+                        transition-all duration-300">
+          <Image
+            src="/images/aboutimg.png"
+            alt="CEO Portrait"
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 640px) 90vw, (max-width: 768px) 80vw, (max-width: 1024px) 70vw, 820px"
+          />
         </div>
       </div>
-    </section>
+    </div>
+
+    {/* CONTENT SECTION – unchanged */}
+    <div 
+      data-aos="fade-left"
+      data-aos-duration="800"
+      className="flex flex-col justify-center items-start
+                 space-y-4 sm:space-y-5 md:space-y-6 
+                 order-1 lg:order-2 text-center lg:text-left
+                 px-2 sm:px-0"
+    >
+      {/* Badge – fixed size, non-responsive */}
+      <p className="inline-flex items-center text-blue-800 font-semibold tracking-widest uppercase 
+                    text-sm bg-blue-50 px-4 py-2 rounded-full 
+                    border border-blue-200 mx-auto lg:mx-0 whitespace-nowrap">
+        Hey! We Are Pitaa
+      </p>
+
+      {/* Heading */}
+      <h2 className="text-2xl min-[480px]:text-3xl sm:text-4xl md:text-5xl lg:text-5xl 
+                     font-black leading-tight text-slate-900 tracking-tight">
+        Building Stronger <br className="hidden min-[480px]:block" />
+        Connections Between <br className="hidden min-[480px]:block" />
+        <span className="text-blue-800 relative inline-block">
+          IT Academia & Industry
+          <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-300 rounded-full"></span>
+        </span>
+      </h2>
+
+      {/* Mission */}
+      <div 
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="100"
+        className="relative pl-10 sm:pl-12 md:pl-14 group text-left"
+      >
+        <div className="absolute left-0 top-0.5 p-1.5 sm:p-2 md:p-2.5 bg-blue-100 rounded-lg shadow-sm 
+                        group-hover:shadow-md group-hover:bg-blue-200 transition-all duration-300">
+          <Cpu className="text-blue-800 w-4 h-4 sm:w-5 sm:h-5" />
+        </div>
+        <h4 className="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-1 sm:mb-1.5">
+          Our Mission
+        </h4>
+        <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed">
+          PITAA’s role as a voice for IT academia is crucial. It aims to address challenges that individual institutions cannot tackle alone, such as influencing policy frameworks, offering input on teaching standards, and aligning curriculum development with industry demands.
+        </p>
+      </div>
+
+      {/* Vision */}
+      <div 
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="200"
+        className="relative pl-10 sm:pl-12 md:pl-14 group text-left"
+      >
+        <div className="absolute left-0 top-0.5 p-1.5 sm:p-2 md:p-2.5 bg-blue-100 rounded-lg shadow-sm 
+                        group-hover:shadow-md group-hover:bg-blue-200 transition-all duration-300">
+          <Sparkles className="text-blue-800 w-4 h-4 sm:w-5 sm:h-5" />
+        </div>
+        <h4 className="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-1 sm:mb-1.5">
+          Our Vision
+        </h4>
+        <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed">
+          By collaborating with academic leaders, industry professionals, and government representatives, PITAA aims to advance IT academics, align educational practices with industry needs, and promote innovation, skill development, and partnerships to build a globally competitive and future-ready IT workforce in Pakistan.
+        </p>
+      </div>
+
+      {/* Button */}
+      <div 
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="300"
+        className="flex justify-center lg:justify-start mt-2"
+      >
+        <Link href='/contact-us'>
+          <Button
+            size="lg"
+            className="group px-6 sm:px-7 md:px-8 lg:px-9 
+                       py-3 sm:py-4 md:py-5 lg:py-6 
+                       text-xs sm:text-sm md:text-base font-semibold 
+                       rounded-full bg-blue-800 text-white shadow-xl shadow-blue-900/30
+                       hover:bg-blue-900 hover:shadow-2xl hover:-translate-y-1 hover:scale-105 
+                       transition-all duration-300 w-fit"
+          >
+            Discover More
+            <ArrowRight className="ml-1.5 sm:ml-2 w-4 h-4 sm:w-5 sm:h-5 
+                                   transition-all duration-300 group-hover:translate-x-2" />
+          </Button>
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* MEMBERS SECTION */}
       <div className="w-full py-5 md:py-10 overflow-hidden">
