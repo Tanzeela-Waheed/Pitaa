@@ -127,9 +127,9 @@ export default function Navbar() {
               Home
             </Link>
             <Link 
-              href="/" 
+              href="/about-us" 
               className={`block px-4 py-2 rounded-lg transition-all duration-200 ${
-                isActive('/about') ? 'bg-gray-700 text-white' : 'text-gray-200 hover:text-white hover:bg-gray-700'
+                isActive('/about-us') ? 'bg-gray-700 text-white' : 'text-gray-200 hover:text-white hover:bg-gray-700'
               }`}
               onClick={() => setIsOpen(false)}
             >
